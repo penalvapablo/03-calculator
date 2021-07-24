@@ -9,6 +9,7 @@
 
 body {
   background-color: #3b4664;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,9 +21,17 @@ body.theme--3 {
   background-color: #17062a;
 }
 
+.container {
+  width: 330px;
+}
+
+@media (min-width: 376px) {
+  .container {
+    width: 500px;
+  }
+}
 .header {
   display: flex;
-  width: 335px;
   margin: 1.5rem auto;
   justify-content: space-between;
   align-items: flex-end;
@@ -116,7 +125,6 @@ body.theme--3 {
   display: grid;
   justify-content: flex-end;
   align-items: center;
-  width: 335px;
   margin: 1.5rem auto;
   word-wrap: break-word;
   word-break: break-all;
@@ -146,7 +154,6 @@ body.theme--3 {
 
 .keyboard {
   background-color: #252d44;
-  width: 335px;
   margin: 1.5rem auto;
   border-radius: 0.6rem;
   padding: 1.4rem;
