@@ -1,3 +1,232 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Spartan', sans-serif;
+}
+
+body {
+  background-color: #3b4664;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &.theme--2 {
+    background-color: #e6e6e6;
+  }
+  &.theme--3 {
+    background-color: #17062a;
+  }
+}
+.header {
+  display: flex;
+  width: 335px;
+  margin: 1.5rem auto;
+  justify-content: space-between;
+  align-items: flex-end;
+  &__title {
+    color: #ffffff;
+    &.theme--2 {
+      color: #34342b;
+    }
+    &.theme--3 {
+      color: #ffec44;
+    }
+  }
+}
+.theme {
+  display: flex;
+  align-items: flex-end;
+  gap: 1rem;
+  &__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.7rem;
+    margin-bottom: 0.1rem;
+    &.theme--2 {
+      color: #34342b;
+    }
+    &.theme--3 {
+      color: #ffec44;
+    }
+  }
+  &__selector {
+    display: flex;
+    flex-direction: column;
+  }
+  &__number {
+    display: flex;
+    margin-bottom: 0.2rem;
+    color: #ffffff;
+    width: 3.7rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    justify-content: space-around;
+    &.theme--2 {
+      color: #34342b;
+    }
+    &.theme--3 {
+      color: #ffec44;
+    }
+  }
+
+  &__position {
+    display: flex;
+    align-items: center;
+    height: 1.3rem;
+    width: 100%;
+    background-color: #252d44;
+    border-radius: 10px;
+    border: none;
+    &--1 {
+      justify-content: flex-start;
+    }
+    &--2 {
+      justify-content: center;
+    }
+    &--3 {
+      justify-content: flex-end;
+    }
+    &.theme--2 {
+      background-color: #d3cdcd;
+    }
+    &.theme--3 {
+      background-color: #1e0836;
+    }
+  }
+
+  &__current {
+    height: 0.8rem;
+    width: 0.8rem;
+    background-color: #d13f30;
+    border-radius: 50px;
+    margin: 0 4px;
+    &.theme--2 {
+      background-color: #d13f30;
+    }
+    &.theme--3 {
+      background-color: #05dbcf;
+    }
+  }
+}
+
+// Screen
+.screen {
+  display: grid;
+  justify-content: flex-end;
+  align-items: center;
+  width: 335px;
+  margin: 1.5rem auto;
+  word-wrap: break-word;
+  word-break: break-all;
+  min-height: 5rem;
+  padding: 0.8rem;
+  background-color: #181f32;
+  border-radius: 0.6rem;
+  &.theme--2 {
+    background-color: #eeeeee;
+  }
+  &.theme--3 {
+    background-color: #1e0836;
+  }
+  &__number {
+    color: white;
+    font-weight: 600;
+    font-size: 1.8rem;
+    max-width: 300px;
+    &.theme--2 {
+      color: #302f28;
+    }
+    &.theme--3 {
+      color: #ffec44;
+    }
+  }
+}
+
+// Keyboard
+
+.keyboard {
+  background-color: #252d44;
+  width: 335px;
+  margin: 1.5rem auto;
+  border-radius: 0.6rem;
+  padding: 1.4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  &.theme--2 {
+    background-color: #d3cdcd;
+  }
+  &.theme--3 {
+    background-color: #1e0836;
+  }
+  & button {
+    cursor: pointer;
+    height: 3.6rem;
+    background-color: #e7e2dc;
+    font-weight: 800;
+    font-size: 1.6rem;
+    color: #44495f;
+    border: none;
+    border-radius: 0.4rem;
+    box-shadow: 0px 3px 0px 0px #a19e99;
+    &.theme--2 {
+      color: #363530;
+    }
+    &.theme--3 {
+      background-color: #331b4d;
+      color: #ffec44;
+      box-shadow: 0px 3px 0px 0px #851c9c;
+    }
+    &.btn--blue {
+      background-color: #647299;
+      font-size: 1rem;
+      color: #faffff;
+      box-shadow: 0px 3px 0px 0px #4a5572;
+      &.theme--2 {
+        background-color: #368287;
+        color: #f7fefe;
+        box-shadow: 0px 3px 0px 0px #1a5e65;
+      }
+      &.theme--3 {
+        background-color: #59057f;
+        color: #fff5ff;
+        box-shadow: 0px 3px 0px 0px #ba14f4;
+      }
+    }
+
+    &.reset {
+      grid-column: -5/-3;
+      width: unset;
+      text-transform: uppercase;
+    }
+    &.igual {
+      grid-column: 3/5;
+      background-color: #d13f30;
+      color: white;
+      font-size: 1.2rem;
+      box-shadow: 0px 3px 0px 0px #b13729;
+      &.theme--2 {
+        background-color: #c85401;
+        box-shadow: 0px 3px 0px 0px rgb(160, 49, 37);
+      }
+      &.theme--3 {
+        color: black;
+        background-color: #00decf;
+        box-shadow: 0px 3px 0px 0px #6efaf1;
+      }
+    }
+    &:hover {
+      background-color: black;
+      color: white;
+      box-shadow: 0px 3px 0px 0px black;
+    }
+  }
+}
+
 .attribution {
-  background-color: red;
+  display: none;
 }

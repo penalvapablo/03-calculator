@@ -14,9 +14,57 @@
 
     <title>Frontend Mentor | Calculator app</title>
     <link rel="stylesheet" href="./css/styles.css" />
-    <script href="index.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="index.js" defer></script>
   </head>
-  <body>
+  <body class="themeChange">
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title themeChange">calc</h1>
+        <div class="theme">
+          <p class="theme__title themeChange">theme</p>
+          <div class="theme__selector">
+            <div class="theme__number themeChange">
+              <p>1</p>
+              <p>2</p>
+              <p>3</p>
+            </div>
+            <button class="theme__position themeChange theme__position--1">
+              <div class="theme__current themeChange"></div>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <div class="screen themeChange">
+        <p class="screen__number themeChange">0</p>
+      </div>
+
+      <section class="keyboard themeChange">
+        <button class="themeChange" id="numero">7</button>
+        <button class="themeChange" id="numero">8</button>
+        <button class="themeChange" id="numero">9</button>
+        <button class="btn--blue themeChange">DEL</button>
+        <button class="themeChange" id="numero">4</button>
+        <button class="themeChange" id="numero">5</button>
+        <button class="themeChange" id="numero">6</button>
+        <button class="themeChange" id="operador">+</button>
+        <button class="themeChange" id="numero">1</button>
+        <button class="themeChange" id="numero">2</button>
+        <button class="themeChange" id="numero">3</button>
+        <button class="themeChange" id="operador">-</button>
+        <button class="themeChange" id="numero">.</button>
+        <button class="themeChange" id="numero">0</button>
+        <button class="themeChange" id="operador">/</button>
+        <button class="themeChange" id="operador">x</button>
+        <button class="btn--blue reset themeChange">reset</button>
+        <button class="btn--red igual themeChange">=</button>
+      </section>
+    </div>
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
