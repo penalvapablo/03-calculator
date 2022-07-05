@@ -14,9 +14,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 body.theme--2 {
   background-color: #e6e6e6;
 }
+
 body.theme--3 {
   background-color: #17062a;
 }
@@ -30,18 +32,22 @@ body.theme--3 {
     width: 500px;
   }
 }
+
 .header {
   display: flex;
   margin: 1.5rem auto;
   justify-content: space-between;
   align-items: flex-end;
 }
+
 .header__title {
   color: #ffffff;
 }
+
 .header__title.theme--2 {
   color: #34342b;
 }
+
 .header__title.theme--3 {
   color: #ffec44;
 }
@@ -51,6 +57,7 @@ body.theme--3 {
   align-items: flex-end;
   gap: 1rem;
 }
+
 .theme__title {
   color: #ffffff;
   text-transform: uppercase;
@@ -58,16 +65,20 @@ body.theme--3 {
   font-size: 0.7rem;
   margin-bottom: 0.1rem;
 }
+
 .theme__title.theme--2 {
   color: #34342b;
 }
+
 .theme__title.theme--3 {
   color: #ffec44;
 }
+
 .theme__selector {
   display: flex;
   flex-direction: column;
 }
+
 .theme__number {
   display: flex;
   margin-bottom: 0.2rem;
@@ -77,12 +88,15 @@ body.theme--3 {
   font-weight: 700;
   justify-content: space-around;
 }
+
 .theme__number.theme--2 {
   color: #34342b;
 }
+
 .theme__number.theme--3 {
   color: #ffec44;
 }
+
 .theme__position {
   display: flex;
   align-items: center;
@@ -92,21 +106,27 @@ body.theme--3 {
   border-radius: 10px;
   border: none;
 }
+
 .theme__position--1 {
   justify-content: flex-start;
 }
+
 .theme__position--2 {
   justify-content: center;
 }
+
 .theme__position--3 {
   justify-content: flex-end;
 }
+
 .theme__position.theme--2 {
   background-color: #d3cdcd;
 }
+
 .theme__position.theme--3 {
   background-color: #1e0836;
 }
+
 .theme__current {
   height: 0.8rem;
   width: 0.8rem;
@@ -114,9 +134,11 @@ body.theme--3 {
   border-radius: 50px;
   margin: 0 4px;
 }
+
 .theme__current.theme--2 {
   background-color: #d13f30;
 }
+
 .theme__current.theme--3 {
   background-color: #05dbcf;
 }
@@ -133,21 +155,26 @@ body.theme--3 {
   background-color: #181f32;
   border-radius: 0.6rem;
 }
+
 .screen.theme--2 {
   background-color: #eeeeee;
 }
+
 .screen.theme--3 {
   background-color: #1e0836;
 }
+
 .screen__number {
   color: white;
   font-weight: 600;
   font-size: 1.8rem;
   max-width: 300px;
 }
+
 .screen__number.theme--2 {
   color: #302f28;
 }
+
 .screen__number.theme--3 {
   color: #ffec44;
 }
@@ -162,12 +189,15 @@ body.theme--3 {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-gap: 1rem;
 }
+
 .keyboard.theme--2 {
   background-color: #d3cdcd;
 }
+
 .keyboard.theme--3 {
   background-color: #1e0836;
 }
+
 .keyboard button {
   cursor: pointer;
   height: 3.6rem;
@@ -179,35 +209,42 @@ body.theme--3 {
   border-radius: 0.4rem;
   box-shadow: 0px 3px 0px 0px #a19e99;
 }
+
 .keyboard button.theme--2 {
   color: #363530;
 }
+
 .keyboard button.theme--3 {
   background-color: #331b4d;
   color: #ffec44;
   box-shadow: 0px 3px 0px 0px #851c9c;
 }
+
 .keyboard button.btn--blue {
   background-color: #647299;
   font-size: 1rem;
   color: #faffff;
   box-shadow: 0px 3px 0px 0px #4a5572;
 }
+
 .keyboard button.btn--blue.theme--2 {
   background-color: #368287;
   color: #f7fefe;
   box-shadow: 0px 3px 0px 0px #1a5e65;
 }
+
 .keyboard button.btn--blue.theme--3 {
   background-color: #59057f;
   color: #fff5ff;
   box-shadow: 0px 3px 0px 0px #ba14f4;
 }
+
 .keyboard button.reset {
   grid-column: -5/-3;
   width: unset;
   text-transform: uppercase;
 }
+
 .keyboard button.igual {
   grid-column: 3/5;
   background-color: #d13f30;
@@ -215,19 +252,27 @@ body.theme--3 {
   font-size: 1.2rem;
   box-shadow: 0px 3px 0px 0px #b13729;
 }
+
 .keyboard button.igual.theme--2 {
   background-color: #c85401;
   box-shadow: 0px 3px 0px 0px #a03125;
 }
+
 .keyboard button.igual.theme--3 {
   color: black;
   background-color: #00decf;
   box-shadow: 0px 3px 0px 0px #6efaf1;
 }
+
 .keyboard button:hover {
-  background-color: black;
+  font-size: 2rem;
+  /* background-color: black;
   color: white;
-  box-shadow: 0px 3px 0px 0px black;
+  box-shadow: 0px 3px 0px 0px black; */
+}
+
+.keyboard button.btn--blue:hover {
+  font-size: 1rem;
 }
 
 .attribution {
