@@ -1,17 +1,7 @@
 'use strict';
 
 const changeThemeBtn = document.querySelector('.theme__position');
-
-// const body = document.querySelector('body');
-
-// const title = document.querySelector('.header__title');
-
-// const themeTitle = document.querySelector('.theme__title');
-// const themeNumber = document.querySelector('.theme__number');
-// const themePosition = document.querySelector('.theme__position');
 const theme1 = document.querySelectorAll('.themeChange');
-console.log(theme1);
-
 const screen = document.querySelector('.screen__number');
 const keyboard = document.querySelector('.keyboard');
 const btn = keyboard.querySelectorAll('button');
@@ -55,9 +45,9 @@ function math() {
   btn.forEach((e) => {
     e.addEventListener('click', () => {
       const clickedBtn = e.innerText;
-      // console.log(`boton clickeado: ${typeof parseFloat(clickedBtn)}`);
+
       const btnType = e.id;
-      // const currentNumber = Number(e.innerText);
+
 
       // si el numero ya tiene ".", no puede agregar otra
       if (clickedBtn === '.' && a.includes('.') && operador === '') return;
@@ -70,21 +60,21 @@ function math() {
         screen.innerHTML = a;
       }
 
-      console.log(`a = ${a}`);
+
 
       // Operador
       if (a != '0' && btnType === 'operador') {
         operador = clickedBtn;
       }
 
-      console.log(`operador: ${operador}`);
+
 
       // B
       if (a != '0' && operador != '' && btnType === 'numero') {
         b += clickedBtn;
         screen.innerHTML = b;
       }
-      console.log(`b = ${b}`);
+
 
       //RESET
       if (clickedBtn === 'RESET') {
@@ -102,7 +92,7 @@ function math() {
         }
       } else if (clickedBtn === 'DEL' && b != '') {
         b = b.slice(0, b.length - 1);
-        console.log(`b despues de del: ${b}`);
+
         screen.innerHTML = b;
       }
 
@@ -139,7 +129,7 @@ function math() {
         operador = '';
         result = '';
       }
-      console.log(`result = ${result}`);
+
 
       // Si cliqueo un operador, A es = a result
       if (a === '' && screen.innerHTML != '0' && btnType === 'operador') {
@@ -147,14 +137,10 @@ function math() {
         operador = clickedBtn;
       }
       // Limite de pantalla
-      console.log('------------------');
+
     });
   });
 }
 math();
 
-// ver problema decimales.. probrar split del numero con coma
 
-// attach teclas con teclado
-
-// desplazarme con las flechas en el teclado
